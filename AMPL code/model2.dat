@@ -1,0 +1,34 @@
+# Set of Hammers
+set Hammers := typeA typeB typeC;
+
+# Set of Suppliers
+set Suppliers := supplier1, supplier2;
+
+# Fixed cost of iron per unit
+param CostIron := 
+	supplier1	4
+	supplier2	7;
+
+# Iron Available from the supplier 1
+param IronAvailability := 4800;
+
+# Extra budget to buy iron from supplier 2
+param ExtraBudget := 800;
+
+# Quantity of Iron per Hammer type
+param KgPerHammer :=
+	typeA	1
+	typeB	1
+	typeC	2;
+	
+# Profit of Hammer per Hammer type
+param Profit :=
+	typeA	27
+	typeB	21
+	typeC	33;
+	
+# Cost of manufactoring per Hammer type
+param CostManufactoring :=
+	typeA	11
+	typeB	6
+	typeC	5;

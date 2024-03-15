@@ -1,0 +1,20 @@
+# Reset the AMPL enviroment
+reset;
+
+# Load the model
+model model1.mod;
+
+# Load the data
+data model1.dat;
+
+# Display the problem formulation
+expand TotalRevenue, IronConstraint, Constraint1, Constraint2;
+
+# Change the solver
+option solver cplex;
+
+# Solve
+solve;
+
+# Show results
+display Number, TotalRevenue;

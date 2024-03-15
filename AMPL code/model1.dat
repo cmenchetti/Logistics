@@ -1,0 +1,26 @@
+# Set of Hammers
+set Hammers := typeA typeB typeC;
+
+# Fixed cost of iron per unit
+param CostIron := 4;
+
+# Iron Available from the factory
+param IronAvailability := 4800;
+
+# Quantity of Iron per Hammer type
+param KgPerHammer :=
+	typeA	1
+	typeB	1
+	typeC	2;
+	
+# Profit of Hammer per Hammer type
+param Profit :=
+	typeA	27
+	typeB	21
+	typeC	33;
+	
+# Cost of manufactoring per Hammer type
+param CostManufactoring :=
+	typeA	11
+	typeB	6
+	typeC	5;
